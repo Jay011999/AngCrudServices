@@ -12,6 +12,7 @@ export class CategoryService {
     { id: 1, title: 'Category 1', description: 'Category description 1' },
   ];
 
+  selectedCategory: ICategory | null = null;
   addCategory(category: ICategory) {
     if (!category.id) category.id = this.categories.length + 1;
     this.categories.push(category);

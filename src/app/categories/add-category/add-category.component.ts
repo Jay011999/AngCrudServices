@@ -23,4 +23,9 @@ export class AddCategoryComponent {
       categoryComponentEnum.Categories
     );
   }
+  onBack() {
+    this.categoryService.selectedComponentEvent.emit(
+      categoryComponentEnum.Categories
+    );
+  }
 }

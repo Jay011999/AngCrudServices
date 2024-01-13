@@ -1,1 +1,7 @@
-<p>view-category works!</p>
+<div class="box my-3">
+  <div>Id: {{ category.id }}</div>
+  <div>title: {{ category.title }}</div>
+  <div>Description: {{ category.description }}</div>
+</div>
+
+<div><button (click)="onBack()" class="btn btn-primary">Back to Categories</button></div>
