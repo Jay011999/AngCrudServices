@@ -18,7 +18,14 @@ export class CategoryService {
     this.categories.push(category);
   }
 
-  editCategory() {}
+  editCategory(category: ICategory) {
+    this.categories = this.categories.map((cat) => {
+      if (cat.id === category.id) {
+        return category;
+      }
+      return cat;
+    });
+  }
 
   getCategories() {}
 

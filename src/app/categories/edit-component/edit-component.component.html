@@ -1,1 +1,16 @@
-<p>edit-component works!</p>
+<h5>Edit Category</h5>
+
+<div class="my-3">
+  <label>Title</label>
+  <input type="text" class="form-control" [(ngModel)]="title" />
+</div>
+
+<div class="my-3">
+  <label>Description</label>
+  <input type="textarea" class="form-control" [(ngModel)]="description" />
+</div>
+
+<div class="my-3">
+  <button class="btn btn-primary" (click)="onUpdateCategory()">Update</button>
+  <button (click)="onBack()" class="btn btn-warning mx-2">Back to Categories</button>
+</div>

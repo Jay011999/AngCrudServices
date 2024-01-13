@@ -12,7 +12,15 @@ export class SingleCategoryComponent {
   @Input() category!: ICategory;
   constructor(private categoryService: CategoryService) {}
   onViewCategory() {
+    this.categoryService.selectedCategory = this.category;
+    this.categoryService.selectedComponentEvent.emit(
+      categoryComponentEnum.viewCategory
+    );
+  }
+  onEditCategory() {
     this.categoryService.selectedCategory=this.category;
-    this.categoryService.selectedComponentEvent.emit(categoryComponentEnum.viewCategory);
+    this.categoryService.selectedComponentEvent.emit(
+      categoryComponentEnum.editCategory
+    );
   }
 }
