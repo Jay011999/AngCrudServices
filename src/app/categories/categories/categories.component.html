@@ -1,3 +1,5 @@
-<div>
-    <app-single-category></app-single-category>
+<div class="row">
+    <div class="col-md-4" *ngFor="let category of categories">
+    <app-single-category [category]="category"></app-single-category>
+    </div>
 </div>

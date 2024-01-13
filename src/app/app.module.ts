@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CategoriesComponent } from './categories/categories/categories.component';
 import { SingleCategoryComponent } from './categories/single-category/single-category.component';
+import { AddCategoryComponent } from './categories/add-category/add-category.component';
+import { FormsModule } from '@angular/forms';
+import { ViewCategoryComponent } from './categories/view-category/view-category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
-    SingleCategoryComponent
+    SingleCategoryComponent,
+    AddCategoryComponent,
+    ViewCategoryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

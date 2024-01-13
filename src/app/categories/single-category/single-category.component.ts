@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ICategory } from '../Models/Icategory';
 
 @Component({
   selector: 'app-single-category',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './single-category.component.css'
 })
 export class SingleCategoryComponent {
+  @Input() category!:ICategory;
 
 }
