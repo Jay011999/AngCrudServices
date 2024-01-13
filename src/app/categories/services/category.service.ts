@@ -26,10 +26,4 @@ export class CategoryService {
       return cat;
     });
   }
-
-  getCategories() {}
-
-  getCategoryById() {}
-
-  deleteCategory() {}
 }
